@@ -9,7 +9,7 @@ while op != "3":
     print ("3. Salir.")
     op = input("Elige una opcion: ")
     if op == "1":
-        entrada = (input("Saldo a depositar: ").replace(",", "."))
+        entrada = input("Saldo a depositar: ").replace(",", ".")
         try:
             deposito = float(entrada)
             saldo += deposito
@@ -17,17 +17,17 @@ while op != "3":
         except ValueError:
             print("Entrada invalida. No se modifico el saldo.")
     elif op == "2":
-         entrada = (input("Saldo a transferir: ").replace(",", "."))
-    try:
+        entrada = input("Saldo a transferir: ").replace(",", ".")
+        try:
             transferencia = float(entrada)
             if transferencia <= saldo:
                 saldo -= transferencia
                 print(f"Nuevo saldo: {saldo}")
             else:
                 print("Fondos insuficientes")
-    except ValueError:
+        except ValueError:
             print("Entrada invalida. No se modifico el saldo.")
     elif op == "3":
-    print ("Sesion Cerrada.")
+            print ("Sesion Cerrada.")
     else:
-    print("Opcion invalida.")
+            print("Opcion invalida.")
