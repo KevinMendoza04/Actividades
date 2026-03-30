@@ -111,10 +111,3 @@ def menu():
 # EJECUCION DEL PROGRAMA
 # ------------------------------
 menu()
-
-# ------------------------------
-# COMENTARIO FINAL
-# ------------------------------
-# Este programa permite gestionar un inventario utilizando listas y diccionarios.
-# Se aplican estructuras de control como condicionales y bucles, junto con funciones
-# para mantener el código organizado, limpio y reutilizable.
